@@ -1,0 +1,29 @@
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.tweet-cache/
+
+# Bundler
+.bundle/
+vendor/
+
+# Node
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local Claude Code session config (dev tooling, not site content)
+.claude/
+
+# Local backups from earlier theme experiments (not part of the live site)
+backup_old_site/
+backup_academicpages_site/
+backup_chirpy_site/
+
+# Legacy scratch folders unrelated to the al-folio site
+projects/
+projetos/

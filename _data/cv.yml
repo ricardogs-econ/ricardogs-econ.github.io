@@ -1,0 +1,337 @@
+cv:
+  name: Ricardo Gonçalves da Silva
+  label: Researcher in Economics & Statistics
+  email: ""
+  location: São Paulo, Brazil
+  image: ""
+  summary: >-
+    Holds a B.A. in Economics from the University of São Paulo (USP, 2001) and an M.Sc. in Computer
+    Science and Computational Mathematics - Statistics from the University of São Paulo (USP, 2004).
+    Experience in Economics and Statistics, with an emphasis on Mathematical, Econometric, and
+    Statistical Methods and Models. Part-time professor at USP, UNESP, and UNIP, with experience
+    teaching undergraduate and graduate courses. Has worked as a consultant for multinational
+    companies including Serasa Experian, Telefónica-VIVO, Walmart e-Commerce, and Banco Votorantim.
+    Beyond academia, has spent over 14 years leading data science and credit-risk modeling teams in
+    the banking, fintech, and technology sectors, applying econometric and machine-learning methods
+    to real-world risk, forecasting, and analytics problems.
+
+  social_networks:
+    - network: GitHub
+      username: ricardogs-econ
+    - network: LinkedIn
+      username: ricardogs
+    - network: ORCID
+      username: 0000-0002-8514-7612
+
+  sections:
+    Education:
+      - institution: University of São Paulo (USP)
+        location: São Paulo, Brazil
+        area: Computer Science and Computational Mathematics - Statistics
+        studyType: M.Sc.
+        start_date: 2002
+        end_date: 2004
+        courses: "Thesis: \"Hypothesis tests and Bayesian model selection criterion for time series with unit root.\""
+        highlights:
+          - "Advisor: Marinho Gomes de Andrade Filho"
+          - "Funded by CNPq (Brazilian National Council for Scientific and Technological Development)"
+          - "Keywords: Stochastic Differential Equations, Time Series, Wiener Process, Econometrics, Unit Root, Finance"
+
+      - institution: University of São Paulo (USP)
+        location: São Paulo, Brazil
+        area: Economics
+        studyType: B.A.
+        start_date: 1996
+        end_date: 2001
+        courses: "Monograph: \"Economic Growth and Convergence: An Empirical and Comparative Analysis of Classical, Bayesian, and Frequency Domain Views.\""
+        highlights:
+          - "Advisor: Eliezer Martins Diniz"
+          - "Funded by CNPq"
+
+      - institution: University of São Paulo (USP)
+        location: São Paulo, Brazil
+        area: "Complementary training: Modelling Dependent Financial Risks (Non-Gaussian)"
+        studyType: Short course (8h)
+        start_date: 2007
+        end_date: 2007
+
+      - institution: University of São Paulo (USP)
+        location: São Paulo, Brazil
+        area: "Complementary training: Elliptical Distributions and Applications in Finance"
+        studyType: Short course (8h)
+        start_date: 2003
+        end_date: 2003
+
+      - institution: University of São Paulo (USP)
+        location: São Paulo, Brazil
+        area: "Complementary training: Modelling Dependence Through Copulas"
+        studyType: Short course (6h)
+        start_date: 2003
+        end_date: 2003
+
+      - studyType: Certification
+        area: "Feature Engineering for Machine Learning"
+
+      - studyType: Certification
+        area: "LangChain - Develop LLM-Powered Applications with LangChain"
+
+    Experience:
+      - company: Serasa S.A. (Serasa Experian)
+        position: Credit Technology Coordinator / Statistical Analyst - Econometrics
+        location: Brazil
+        start_date: 2006
+        end_date: 2008
+        summary: Development of econometric models for credit decisions and default prediction.
+        highlights:
+          - "Research: Econometrics, Time Series, Forecasting, Markov Chains, Risk Analysis, Economic Policy"
+
+      - company: SAS Institute
+        position: Visiting Professor
+        location: United States
+        start_date: 2008
+        end_date: 2008
+
+      - company: Associação de Escolas Reunidas (ASSER)
+        position: "Professor; Coordinator of the Research and Extension Nucleus (NICE)"
+        location: Rio Claro, Brazil
+        start_date: 2005
+        end_date: 2006
+        summary: Taught "Costs and Pricing" (undergraduate, Business Administration); supervised student monographs.
+        highlights:
+          - "Research: Econometrics, Economic Theory, International Economics, Statistics"
+
+      - company: São Paulo State University (UNESP)
+        position: Assistant Professor
+        location: Brazil
+        start_date: 2005
+        end_date: 2005
+        summary: Taught "Microeconomics" (graduate level, Economics).
+
+      - company: University of São Paulo (USP) - ICMC
+        position: Graduate Teaching Assistant (Teaching Improvement Program - PAE)
+        location: São Carlos, Brazil
+        start_date: 2002
+        end_date: 2004
+        summary: Taught "Stochastic Processes" and "Introduction to Probability and Statistics II" (undergraduate); research and development of technical-scientific articles and software.
+        highlights:
+          - "Research lines: Statistical Inference, Time Series Analysis, Asymptotic Theory, Econometrics, Real Options & Finance, Applied Stochastic Processes"
+
+      - company: University of São Paulo (USP) - FEA
+        position: Research Assistant
+        location: São Paulo, Brazil
+        start_date: 1998
+        end_date: 2001
+        summary: Development of new econometric research techniques and estimation of computationally intensive models.
+
+    Projects:
+      - name: Economic Indicators in Default Forecasting
+        summary: >-
+          Incorporation of macroeconomic determinants into default forecasts using a Vector
+          Autoregressive (VAR) methodology via Composite Leading Indicators. Coordinator: Ricardo
+          Gonçalves da Silva.
+        start_date: 2006
+        end_date: 2008
+
+      - name: Econometric Methods in Macroeconomics and Finance
+        summary: >-
+          Development of econometric methods in macroeconomics and finance. Team: Ricardo Gonçalves
+          da Silva (member); Milton Barossi Filho (coordinator).
+        start_date: 2004
+        end_date: 2005
+
+      - name: New Econometric Techniques for the Study of Economic Growth Models
+        summary: >-
+          Development of new statistical methodologies addressing econometric issues in economic
+          growth analysis, isolating groups of countries homogeneous with respect to unit roots. Team:
+          Ricardo Gonçalves da Silva, Milton Barossi Filho (members); Eliezer Martins Diniz
+          (coordinator). Funded by CNPq.
+        start_date: 2003
+        end_date: 2005
+
+    Publications:
+      - title: Bayesian Semiparametric Regression for Autoregressive Models with Possible Unit Roots
+        authors:
+          - Ricardo Gonçalves da Silva
+        publisher: "Working Paper (unpublished)"
+
+      - title: "Use of Macro-Economic Factors in Credit Scoring: Application to Point-in-Time Risk Evaluation of SMEs"
+        authors:
+          - Ricardo Gonçalves da Silva
+        publisher: "Working Paper (unpublished)"
+
+      - title: Delays in Stabilization or in Reforms? The Debt Crisis
+        authors:
+          - C. Alberto Cinquetti
+          - Ricardo Gonçalves da Silva
+        publisher: Developing Economies
+        releaseDate: 2008-01-01
+
+      - title: "The Empirics of The Solow Growth Model: Long-Term Evidence"
+        authors:
+          - Ricardo Gonçalves da Silva
+          - M. Barossi Filho
+          - E. M. Diniz
+        publisher: Journal of Applied Economics
+        releaseDate: 2004-01-01
+
+      - title: "Understanding Brazilian Unemployment: A Mixed Autoregressive Approach"
+        authors:
+          - Ricardo Gonçalves da Silva
+          - M. Barossi Filho
+          - M. G. Andrade
+        publisher: ICMC-USP Department of Mathematics Seminar Note
+        releaseDate: 2003-01-01
+
+      - title: A Comparison Between Default Correlation Estimators for Credit Risk in Brazil
+        authors:
+          - Ricardo Gonçalves da Silva
+          - F. W. M. Andrade
+        publisher: "Tecnologia de Crédito (Credit Technology magazine)"
+        releaseDate: 2007-10-01
+
+      - title: Estimation of Correlations in Credit Risk in Brazil
+        authors:
+          - Ricardo Gonçalves da Silva
+          - F. W. M. Andrade
+        publisher: X SEMEAD
+        releaseDate: 2007-01-01
+
+      - title: Delays in Stabilization or in Reforms? The Debt Crisis
+        authors:
+          - Ricardo Gonçalves da Silva
+          - Carlos Alberto Cinquetti
+        publisher: VII Encontro Regional de Economia - ANPEC Sul
+        releaseDate: 2005-01-01
+
+      - title: Delays in Stabilization or in Reforms? The Debt Crisis
+        authors:
+          - Ricardo Gonçalves da Silva
+          - Carlos Alberto Cinquetti
+        publisher: Encuentro Anual Sociedad de Economía de Chile
+        releaseDate: 2005-06-01
+
+      - title: Pooled Estimation and Error Correction Approach To a Dynamic Panel Solow Growth Model
+        authors:
+          - Ricardo Gonçalves da Silva
+          - E. M. Diniz
+          - M. Barossi Filho
+        publisher: Latin American Meeting of the Econometric Society
+        releaseDate: 2002-01-01
+
+      - title: Pooled Estimation and Error Correction Approach To a Dynamic Panel Solow Growth Model
+        authors:
+          - Ricardo Gonçalves da Silva
+          - M. Barossi Filho
+          - E. M. Diniz
+        publisher: SBE - Sociedade Brasileira de Econometria
+        releaseDate: 2001-01-01
+
+      - title: "Unit Root, Structural Break, and the Validity of PPP: Results for Trade Relations Between Brazil and the European Union"
+        authors:
+          - Ricardo Gonçalves da Silva
+          - M. Barossi Filho
+          - S. D. Silber
+        publisher: Encontro dos Economistas de Língua Portuguesa (EELP)
+        releaseDate: 2001-01-01
+
+      - title: Pooled Estimation and Error Correction Approach To a Dynamic Panel Solow Growth Model
+        authors:
+          - Ricardo Gonçalves da Silva
+          - M. Barossi Filho
+          - E. M. Diniz
+        publisher: Latin America and Caribbean Economic Association (LACEA)
+        releaseDate: 2001-06-01
+
+      - title: Hierarchical Bayes and Distribution Fit Approach for Estimation of Default Correlation
+        authors:
+          - Ricardo Gonçalves da Silva
+          - F. W. M. Andrade
+        publisher: Third Brazilian Conference on Statistical Modelling in Insurance and Finance
+        releaseDate: 2007-01-01
+
+      - title: Bayesian Unit Root Tests for Financial Time Series
+        authors:
+          - Ricardo Gonçalves da Silva
+          - Marinho G. Andrade
+        publisher: Brazilian Conference on Statistical Modelling in Insurance and Finance
+        releaseDate: 2003-01-01
+
+      - title: "A Comparison of Bayesian and Bootstrapped Maximum Likelihood Approaches for ARCH Models: Evidence from Brazilian Financial Time Series"
+        authors:
+          - Ricardo Gonçalves da Silva
+          - Marinho G. Andrade
+          - Sandra Cristina de Oliveira
+        publisher: Brazilian Conference on Statistical Modelling in Insurance and Finance
+        releaseDate: 2003-06-01
+
+      - title: "Unit Root Tests: A Comparative Approach Between Classical and Bayesian Procedures"
+        authors:
+          - Ricardo Gonçalves da Silva
+        publisher: Simpósio de Teses e Dissertações do ICMC
+        releaseDate: 2003-09-01
+
+      - title: "Unit Root Tests in Econometrics: A Bayesian Approach"
+        authors:
+          - Ricardo Gonçalves da Silva
+          - Marinho G. Andrade
+        publisher: Escola de Séries Temporais e Econometria
+        releaseDate: 2003-08-01
+
+      - title: "Understanding Brazilian Unemployment Structure: A Mixed Autoregressive Approach"
+        authors:
+          - Ricardo Gonçalves da Silva
+          - Marinho G. Andrade
+          - M. Barossi Filho
+        publisher: Escola de Séries Temporais e Econometria
+        releaseDate: 2003-08-02
+
+      - title: Economic Growth and Human Capital
+        authors:
+          - Ricardo Gonçalves da Silva
+        publisher: SICUSP
+        releaseDate: 1998-01-01
+
+    Awards:
+      - title: Fundace Award for Best Monograph
+        awarder: FUNDACE
+        date: 2001-01-01
+
+      - title: FEA Junior Engagement Award
+        awarder: Empresa Júnior FEA
+        date: 2001-01-01
+
+    Volunteer:
+      - company: Structural Change and Economic Dynamics
+        position: Journal Reviewer
+        start_date: 2008
+        end_date: Present
+
+      - company: Journal of Economic Growth
+        position: Journal Reviewer
+        start_date: 2007
+        end_date: Present
+
+      - company: Economic Modelling
+        position: Journal Reviewer
+        start_date: 2007
+        end_date: Present
+
+      - company: European Journal of Operational Research
+        position: Journal Reviewer
+        start_date: 2007
+        end_date: Present
+
+    Languages:
+      - name: English
+        summary: "Fluent - good comprehension, speaking, reading, and writing"
+
+    Skills:
+      - name: Econometrics & Statistics
+        level: Expert
+        icon: fa-solid fa-chart-line
+        keywords: "Econometrics, Time Series Analysis, Statistical Inference, Applied Stochastic Processes, Real Options & Finance, Asymptotic Theory, Forecasting, Markov Chains, Risk Analysis"
+
+      - name: Data Science & Machine Learning
+        level: Expert
+        icon: fa-solid fa-robot
+        keywords: "Machine Learning, Credit Risk Modeling (PD, EAD, LGD), Big Data, Natural Language Processing, MLOps, Business Intelligence"
