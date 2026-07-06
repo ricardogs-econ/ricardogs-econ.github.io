@@ -9,11 +9,10 @@ cv:
     Science and Computational Mathematics - Statistics from the University of São Paulo (USP, 2004).
     Experience in Economics and Statistics, with an emphasis on Mathematical, Econometric, and
     Statistical Methods and Models. Part-time professor at USP, UNESP, and UNIP, with experience
-    teaching undergraduate and graduate courses. Has worked as a consultant for multinational
-    companies including Serasa Experian, Telefónica-VIVO, Walmart e-Commerce, and Banco Votorantim.
-    Beyond academia, has spent over 14 years leading data science and credit-risk modeling teams in
-    the banking, fintech, and technology sectors, applying econometric and machine-learning methods
-    to real-world risk, forecasting, and analytics problems.
+    teaching undergraduate and graduate courses. Beyond academia, has spent over 14 years leading
+    data science and credit-risk modeling teams in the banking, fintech, and technology sectors,
+    applying econometric and machine-learning methods to real-world risk, forecasting, and
+    analytics problems.
 
   social_networks:
     - network: GitHub
@@ -24,6 +23,9 @@ cv:
       username: 0000-0002-8514-7612
 
   sections:
+    # ---------------------------------------------------------------
+    # Academic tab -- sourced entirely from Curriculum Lattes
+    # ---------------------------------------------------------------
     Education:
       - institution: University of São Paulo (USP)
         location: São Paulo, Brazil
@@ -69,22 +71,7 @@ cv:
         start_date: 2003
         end_date: 2003
 
-      - studyType: Certification
-        area: "Feature Engineering for Machine Learning"
-
-      - studyType: Certification
-        area: "LangChain - Develop LLM-Powered Applications with LangChain"
-
     Experience:
-      - company: Serasa S.A. (Serasa Experian)
-        position: Credit Technology Coordinator / Statistical Analyst - Econometrics
-        location: Brazil
-        start_date: 2006
-        end_date: 2008
-        summary: Development of econometric models for credit decisions and default prediction.
-        highlights:
-          - "Research: Econometrics, Time Series, Forecasting, Markov Chains, Risk Analysis, Economic Policy"
-
       - company: SAS Institute
         position: Visiting Professor
         location: United States
@@ -123,6 +110,15 @@ cv:
         end_date: 2001
         summary: Development of new econometric research techniques and estimation of computationally intensive models.
 
+      - company: Serasa S.A. (Serasa Experian)
+        position: Credit Technology Coordinator / Statistical Analyst - Econometrics
+        location: Brazil
+        start_date: 2006
+        end_date: 2008
+        summary: Development of econometric models for credit decisions and default prediction.
+        highlights:
+          - "Research: Econometrics, Time Series, Forecasting, Markov Chains, Risk Analysis, Economic Policy"
+
     Projects:
       - name: Economic Indicators in Default Forecasting
         summary: >-
@@ -149,16 +145,6 @@ cv:
         end_date: 2005
 
     Publications:
-      - title: Bayesian Semiparametric Regression for Autoregressive Models with Possible Unit Roots
-        authors:
-          - Ricardo Gonçalves da Silva
-        publisher: "Working Paper (unpublished)"
-
-      - title: "Use of Macro-Economic Factors in Credit Scoring: Application to Point-in-Time Risk Evaluation of SMEs"
-        authors:
-          - Ricardo Gonçalves da Silva
-        publisher: "Working Paper (unpublished)"
-
       - title: Delays in Stabilization or in Reforms? The Debt Crisis
         authors:
           - C. Alberto Cinquetti
@@ -331,7 +317,142 @@ cv:
         icon: fa-solid fa-chart-line
         keywords: "Econometrics, Time Series Analysis, Statistical Inference, Applied Stochastic Processes, Real Options & Finance, Asymptotic Theory, Forecasting, Markov Chains, Risk Analysis"
 
+    # ---------------------------------------------------------------
+    # Professional tab -- sourced entirely from LinkedIn
+    # ---------------------------------------------------------------
+    "Professional Experience":
+      - company: Núclea
+        position: Data Science Consultant
+        location: São Paulo, Brazil
+        start_date: 2025-11
+        end_date: Present
+        highlights:
+          - Produce, test, and experiment with statistical models applied to different business areas
+          - Create, maintain, and update analytical reports for the squad and the business
+          - Bring insights and conduct experiments with business areas
+          - Develop predictive models using machine learning techniques to solve business problems
+          - Support the business and sales teams in presenting company products to potential clients
+          - Prepare technical presentations to discuss and demonstrate analysis and model results to technical stakeholders
+
+      - company: BIP Brasil
+        position: Data Science Manager
+        location: São Paulo, Brazil
+        start_date: 2024-01
+        end_date: 2025-06
+        highlights:
+          - "Led a cross-functional team on regulatory projects (Bacen Resolution 4,966/21), focused on credit risk model development, regulatory compliance, and data governance"
+          - Built the 6-to-12-month strategic roadmap for the Data Science area, defined short- and medium-term goals based on company OKRs, and aligned deliverables with corporate and regulatory objectives
+          - Worked on Generative AI projects
+          - Developed and productized predictive credit risk models integrated with Big Data platforms and legacy systems; defined MLOps and monitoring practices for origination, behavior, and collections
+
+      - company: Kenlo
+        position: Data Science Consultant
+        location: São Paulo, Brazil
+        start_date: 2023-06
+        end_date: 2024-01
+        highlights:
+          - Managed a multidisciplinary team of 9 (data scientists, analysts, financial specialists), promoting technical integration, delivery alignment, and analytical solution development
+          - Implemented statistical models incorporating macroeconomic variables, ran stress tests and sensitivity analyses, improving score robustness and market fit
+          - Implemented a Machine Learning algorithm to productize risk models across application, behavior, and collection stages, with systemic integration and predictive performance monitoring
+          - Analyzed large volumes of delinquency data, generated strategic recommendations, supported executive leadership, and contributed technically to internal committees and regulators
+
+      - company: minu.co
+        position: Executive Data Science Manager
+        location: São Paulo, Brazil
+        start_date: 2021-03
+        end_date: 2023-03
+        highlights:
+          - "Managed a team of 12 professionals, supported recruiting of 10 analysts/scientists, built the data science roadmap, and integrated product, engineering, and marketing for strategic analytics delivery"
+          - Organized and analyzed data via Looker and Power BI dashboards with financial, commercial, and customer KPIs to support company OKRs
+          - Developed graph-based recommendation models using Neo4j, focused on segmentation and reward personalization, integrating business rules with product and marketing strategy
+          - Implemented predictive and time-series models for P&L and credit forecasting; structured data governance and participated in the LGPD compliance executive committee
+
+      - company: PicPay
+        position: Data Science Manager
+        location: São Paulo, Brazil
+        start_date: 2019-09
+        end_date: 2021-03
+        highlights:
+          - Managed a team of 15 data scientists, set priorities, tracked KRs aligned to company OKRs, and led strategic initiatives in credit risk and data science
+          - Developed statistical and machine learning models, including time series forecasting and credit risk modeling, using R and Python across risk and customer service projects
+          - "Led the \"Customer Genomics\" project, analyzing user behavior via clustering, data mining, and NLP embeddings (Generative AI) for growth and activation strategies"
+          - Implemented automatic legal-entity categorization using NLP to review and automate business registration records, improving classification and indexing efficiency
+
+      - company: Avante.com.vc
+        position: Data Science Manager
+        location: São Paulo, Brazil
+        start_date: 2017-01
+        end_date: 2019-07
+        highlights:
+          - Managed the data science and engineering team (10 people), set priorities, built the technical roadmap, tracked OKRs, and coordinated the company's strategic initiatives
+          - Developed credit risk models for SMEs, built a predictive default system and anti-fraud solutions based on geolocation and machine learning in production environments
+          - Led statistical modeling and machine learning projects, training and leading a multidisciplinary team, validating models, and optimizing data-driven decision processes
+
+      - company: Telefônica Brasil
+        position: Lead Data Scientist
+        location: São Paulo, Brazil
+        start_date: 2015-02
+        end_date: 2016-07
+        highlights:
+          - Managed a technical team of 5 and coordinated statistical and predictive modeling projects for software failure detection and customer clustering in a Hadoop environment using SAS, R, and Hive
+          - Integrated systems and consolidated large data volumes in Hadoop clusters using MapReduce, supporting legacy systems and aligning with the business's Big Data strategy
+          - Provided strategic mentoring on analytical and predictive models focused on business insights, organizing data flows, validating deliverables, and interfacing with BI and engineering teams
+
+      - company: Banco Votorantim
+        position: Lead Data Scientist
+        location: São Paulo, Brazil
+        start_date: 2010-05
+        end_date: 2014-10
+        highlights:
+          - Validated credit risk models based on Basel Accord parameters, analyzing performance and statistical stability for regulatory compliance and audits
+          - "Developed regulatory and internal models estimating PD, EAD, and LGD, structuring parameters applicable across the bank's business lines for credit risk and regulatory capital"
+          - Calculated economic capital and unexpected losses through operational risk modeling, applied to strategic risk management indicators, supporting compliance and corporate governance
+
+      - company: Serasa Experian
+        position: Mathematical Modeling Coordinator
+        location: São Paulo, Brazil
+        start_date: 2006-03
+        end_date: 2008-11
+        highlights:
+          - Managed the team's mathematical modeling routines and construction of economic and sector indicators (MIS), tracking deliverables aligned with organizational strategy
+          - "Developed 50+ statistical credit risk models, including individual (PF) and business (PJ) segmentations, applied to behavior, collections, and delinquency scores"
+          - Conducted macroeconomic analyses with active participation in FEBRABAN meetings, built delinquency indicators, and developed a risk estimation methodology for national SMEs
+
+    "Professional Publications":
+      - title: Bayesian Semiparametric Regression for Autoregressive Models with Possible Unit Roots
+        authors:
+          - Ricardo Gonçalves da Silva
+        publisher: "Working Paper (unpublished)"
+
+      - title: "Use of Macro-Economic Factors in Credit Scoring: Application to Point-in-Time Risk Evaluation of SMEs"
+        authors:
+          - Ricardo Gonçalves da Silva
+        publisher: "Working Paper (unpublished)"
+
+    Certifications:
+      - studyType: Certification
+        area: "The Five-Step Creative Process"
+
+      - studyType: Certification
+        area: "Feature Engineering for Machine Learning"
+
+      - studyType: Certification
+        area: "Experian Jam - 4th Edition (Participant)"
+
+      - studyType: Certification
+        area: "Managing High-Performance Professionals"
+
+      - studyType: Certification
+        area: "LangChain - Develop LLM-Powered Applications with LangChain"
+
+    "Professional Languages":
+      - name: English
+        summary: "Full Professional Proficiency"
+      - name: Portuguese
+        summary: "Native or Bilingual Proficiency"
+
+    "Professional Skills":
       - name: Data Science & Machine Learning
         level: Expert
         icon: fa-solid fa-robot
-        keywords: "Machine Learning, Credit Risk Modeling (PD, EAD, LGD), Big Data, Natural Language Processing, MLOps, Business Intelligence"
+        keywords: "Data Science, Machine Learning, Business Intelligence, Credit Risk Modeling (PD, EAD, LGD), Big Data, Natural Language Processing, MLOps, DataOps, Agile Management"

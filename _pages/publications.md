@@ -7,6 +7,8 @@ nav: true
 nav_order: 2
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/tabs.css' | relative_url }}">
+
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
@@ -15,6 +17,18 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+{% tabs publications-tabs %}
+
+{% tab publications-tabs Articles %}
+{% bibliography -q @*[abbr!=Working Paper] %}
+{% endtab %}
+
+{% tab publications-tabs Working Papers %}
+{% bibliography -q @*[abbr=Working Paper] %}
+{% endtab %}
+
+{% endtabs %}
 
 </div>
+
+<script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>

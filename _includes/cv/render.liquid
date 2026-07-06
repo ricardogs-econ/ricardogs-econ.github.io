@@ -1,0 +1,218 @@
+{% comment %}
+  Local override of al_folio_cv's render.liquid. Splits the CV into two tabs:
+  "Academic" (everything sourced from Curriculum Lattes: education,
+  experience, projects, publications, awards, journal-review service,
+  languages, skills) and "Professional" (everything sourced from LinkedIn:
+  experience, publications, certifications, languages, skills). Only
+  supports the RenderCV (site.data.cv.cv) format used by this site.
+
+  Note: each tab block's content is re-run through the Markdown converter
+  (see jekyll-tabs), so it must start with a raw HTML tag on the very first
+  line -- any leading assign tags leave blank lines that make kramdown treat
+  the block as a paragraph and HTML-escape it. All assigns are therefore
+  computed here, before the tabs open.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/tabs.css' | relative_url }}">
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ page.title }}
+      {% if page.cv_pdf %}
+        <a
+          {% if page.cv_pdf contains '://' %}
+            href="{{ page.cv_pdf }}"
+          {% else %}
+            href="{{ page.cv_pdf | relative_url }}"
+          {% endif %}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="float-right"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      {% endif %}
+    </h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="cv">
+      {% assign cv = site.data.cv.cv %}
+
+      {% if cv %}
+        {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Contact Information</h3>
+            <table class="table table-cv table-sm table-borderless">
+              {% if cv.name %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
+                </tr>
+              {% endif %}
+              {% if cv.label %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.label }}</td>
+                </tr>
+              {% endif %}
+              {% if cv.location %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.location }}</td>
+                </tr>
+              {% endif %}
+            </table>
+          </div>
+        {% endif %}
+
+        {% if cv.summary %}
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          </div>
+        {% endif %}
+
+        {%- assign empty_array = '' | split: ',' -%}
+        {%- assign academic_exp = cv.sections.Experience | default: empty_array -%}
+        {%- assign vol = cv.sections.Volunteer | default: empty_array -%}
+        {%- assign combined_academic_exp = academic_exp | concat: vol -%}
+
+        {% tabs cv-tabs %}
+
+        {% tab cv-tabs Academic %}<div class="card-group">
+          {% if combined_academic_exp.size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Academic Experience</h3>
+              <div>
+                {% assign entries = combined_academic_exp %}
+                {% include cv/experience.liquid %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if cv.sections.Education.size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Education</h3>
+              <div>
+                {% assign entries = cv.sections.Education %}
+                {% include cv/education.liquid %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if cv.sections.Projects.size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Projects</h3>
+              <div>
+                {% assign entries = cv.sections.Projects %}
+                {% include cv/projects.liquid %}
+              </div>
+            </div>
+          {% endif %}
+
+          <div class="card mt-3 p-3">
+            <p class="font-weight-light mb-0">
+              <a href="{{ '/publications/' | relative_url }}"><i class="fa-solid fa-book"></i> Click here for the full list of publications and articles</a>
+            </p>
+          </div>
+
+          {% if cv.sections.Awards.size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Awards</h3>
+              <div>
+                {% assign entries = cv.sections.Awards %}
+                {% include cv/awards.liquid %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if cv.sections.Languages.size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Languages</h3>
+              <div>
+                {% assign entries = cv.sections.Languages %}
+                {% include cv/languages.liquid %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if cv.sections.Skills.size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Skills</h3>
+              <div>
+                {% assign entries = cv.sections.Skills %}
+                {% include cv/skills.liquid %}
+              </div>
+            </div>
+          {% endif %}
+        </div>{% endtab %}
+
+        {% tab cv-tabs Professional %}<div class="card-group">
+          <div class="card mt-3 p-3">
+            <a class="btn btn-sm z-index-0" href="https://www.linkedin.com/in/ricardogs/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin"></i> View full profile on LinkedIn
+            </a>
+          </div>
+
+          {% if cv.sections['Professional Experience'].size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Professional Experience</h3>
+              <div>
+                {% assign entries = cv.sections['Professional Experience'] %}
+                {% include cv/experience.liquid %}
+              </div>
+            </div>
+          {% endif %}
+
+          <div class="card mt-3 p-3">
+            <p class="font-weight-light mb-0">
+              <a href="{{ '/publications/' | relative_url }}"><i class="fa-solid fa-book"></i> Click here for the full list of publications and articles</a>
+            </p>
+          </div>
+
+          {% if cv.sections.Certifications.size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Certifications</h3>
+              <div>
+                {% assign entries = cv.sections.Certifications %}
+                {% include cv/education.liquid %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if cv.sections['Professional Languages'].size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Languages</h3>
+              <div>
+                {% assign entries = cv.sections['Professional Languages'] %}
+                {% include cv/languages.liquid %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if cv.sections['Professional Skills'].size > 0 %}
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">Skills</h3>
+              <div>
+                {% assign entries = cv.sections['Professional Skills'] %}
+                {% include cv/skills.liquid %}
+              </div>
+            </div>
+          {% endif %}
+        </div>{% endtab %}
+
+        {% endtabs %}
+
+      {% else %}
+        <p>No CV data found. Please configure RenderCV data in `_data/cv.yml`.</p>
+      {% endif %}
+    </div>
+  </article>
+</div>
+
+<script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>

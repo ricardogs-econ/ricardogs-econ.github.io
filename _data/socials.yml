@@ -1,12 +1,10 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-cv_pdf: /pdfs/cv.pdf # path to your CV PDF file
 github_username: ricardogs-econ
 orcid_id: 0000-0002-8514-7612
 linkedin_username: ricardogs
-rss_icon: true # comment this line to hide the RSS icon
 custom_social: # Curriculum Lattes (no native jekyll-socials key for it)
-  logo: https://cnpq.br/favicon.ico
+  logo: fa-solid fa-graduation-cap # .ico favicons aren't a supported image extension here, so use a real icon font class
   title: Curriculum Lattes
   url: http://lattes.cnpq.br/3257355261058855

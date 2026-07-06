@@ -1,0 +1,50 @@
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1rem;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.tab > * {
+    flex: none;
+    position: relative;
+}
+
+.tab > * > a {
+    display: block;
+    text-align: center;
+    padding: 9px 20px;
+    color: inherit;
+    opacity: 0.6;
+    border-bottom: 2px solid transparent;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition: opacity 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab > .active > a {
+    opacity: 1;
+    border-color: currentColor;
+}
+
+.tab-content {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.tab-content > li {
+    display: none;
+}
+
+.tab-content > li.active {
+    display: block;
+}
