@@ -1,47 +1,27 @@
 ---
 layout: page
-permalink: /repositories/
-title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
-nav: false
-nav_order: 4
+permalink: /codes/
+title: codes
+description: Research code and software repositories.
+nav: true
+nav_order: 3
 ---
 
-{% if site.data.repositories.github_users %}
-
-## GitHub users
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
-</div>
-
----
-
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
-
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-{% endif %}
-
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
+{% if site.data.repositories.codes %}
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-stretch">
+  {% for repo in site.data.repositories.codes %}
+    <div class="repo p-2" style="width: 100%; max-width: 300px;">
+      <div class="card h-100 p-3">
+        <h5 class="card-title font-weight-bold">{{ repo.name }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ repo.owner }}</h6>
+        {% if repo.description %}
+          <p class="card-text">{{ repo.description }}</p>
+        {% endif %}
+        <a class="btn btn-sm mt-auto" href="{{ repo.url }}" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
   {% endfor %}
 </div>
 {% endif %}
